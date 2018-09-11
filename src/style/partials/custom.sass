@@ -1,0 +1,27 @@
+body
+	background: $mainColor
+	font-family: Merriweather, 'Times New Roman', Times, serif
+	font-size: 16px
+.title
+	font-size: 40px
+	color: $mainColor
+	padding-bottom: 60px
+	position: relative
+	text-align: center
+	&::after
+		content: ''
+		display: block
+		position: absolute
+		+sprite($decoration-line)
+		bottom: 0
+		left: 0
+		right: 0
+		margin: auto
+
+// Font icons
+.fico
+	display: inline-block
+	font-size: 3rem
+	&::before
+		display: block
+
