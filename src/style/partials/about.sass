@@ -1,0 +1,36 @@
+.about
+	background: url(../img/about_back.jpg) no-repeat center right
+	background-size: cover
+	padding-top: 250px
+	padding-bottom: 170px
+	.container
+		position: relative
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			background: url(../img/about_photo.png) no-repeat center top
+			height: 909px
+			width: 949px
+			right: 0
+			bottom: -213px
+	&__content
+		max-width: 615px
+		width: 100%
+		text-align: center
+		color: $mainColor
+		position: relative
+		padding-bottom: 200px
+		&::after
+			content: ''
+			display: block
+			position: absolute
+			bottom: 0
+			right: 0
+			+sprite($signature)
+	&__title
+		margin-bottom: 60px
+	.text
+		font-size: 30px
+		font-family: 'Merriweather-Light', 'Times New Roman', Times, serif
+		line-height: 1.2
