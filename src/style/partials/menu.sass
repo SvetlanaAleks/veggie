@@ -1,0 +1,59 @@
+.menu
+	padding-top: 70px
+	padding-bottom: 80px
+	&__title
+		margin-bottom: 60px
+	&__tabs
+		display: flex
+		justify-content: center
+		margin-bottom: 85px
+		.list
+			border: 1px solid transparent
+			margin-right: 22px
+			font-size: 18px
+			transition: .4s linear
+			&--active
+				border: 1px solid $mainColor
+			&:last-of-type
+				margin-right: 0
+			&:hover
+				border: 1px solid $mainColor
+			.link
+				text-decoration: none
+				color: $mainColor
+				padding: 17px 23px
+				display: block
+	&__list
+		display: none
+		justify-content: space-between
+		position: relative
+		&--active
+			display: flex
+		.col
+			width: 635px
+	&__item
+		border-bottom: 1px dotted currentColor
+		display: flex
+		justify-content: space-between
+		color: $mainColor
+		margin-bottom: 40px
+		.name
+			position: relative
+			background: white
+			padding: 10px 10px 10px 0
+			margin-bottom: -10px
+			font-size: 18px
+			font-family: 'Merriweather-Light', 'Times New Roman', Times, serif
+			&__components
+				position: absolute
+				left: 0
+				bottom: -6px
+				font-style: italic
+				white-space: nowrap
+				font-size: 14px
+		.price
+			background: white
+			padding: 10px 10px 0 10px
+			margin-bottom: -10px
+			font-size: 18px
+			font-family: 'Merriweather-Light', 'Times New Roman', Times, serif
