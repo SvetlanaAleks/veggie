@@ -1,19 +1,20 @@
 .about
-	background: url(../img/about_back.jpg) no-repeat center right
+	background: #efefef url(../img/about_back.jpg) no-repeat right center
 	background-size: cover
 	padding-top: 250px
 	padding-bottom: 170px
-	.container
-		position: relative
-		&::before
-			content: ''
-			display: block
-			position: absolute
-			background: url(../img/about_photo.png) no-repeat center top
-			height: 909px
-			width: 949px
-			right: 0
-			bottom: -213px
+	+r(1599)
+		background-position: calc(50% - 180px) center
+	+r(1199)
+		background-position: calc(50% - 100px) center
+	+r(991)
+		background-position: calc(50% - -8px) center
+	+r(767)
+		background-position: left
+		padding-top: 70px
+		padding-bottom: 70px
+	+r(575)
+		padding-bottom: 50px
 	&__content
 		max-width: 615px
 		width: 100%
@@ -21,6 +22,12 @@
 		color: $mainColor
 		position: relative
 		padding-bottom: 200px
+		+r(1599)
+			max-width: 400px
+		+r(767)
+			max-width: 100%
+		+r(575)
+			padding-bottom: 170px
 		&::after
 			content: ''
 			display: block
@@ -28,9 +35,21 @@
 			bottom: 0
 			right: 0
 			+sprite($signature)
+			+r(575)
+				transform: scale(.8)
 	&__title
 		margin-bottom: 60px
+		+r(991)
+			font-size: 37px
+		+r(575)
+			font-size: 35px
 	.text
 		font-size: 30px
 		font-family: 'Merriweather-Light', 'Times New Roman', Times, serif
 		line-height: 1.2
+		+r(1599)
+			font-size: 28px
+		+r(991)
+			font-size: 25px
+		+r(575)
+			font-size: 22px

@@ -1,25 +1,57 @@
 .specials
 	padding-top: 80px
 	padding-bottom: 105px
+	+r(767)
+		padding-top: 50px
+		padding-bottom: 50px
 	&__title
 		margin-bottom: 60px
+		+r(991)
+			font-size: 36px
+		+r(767)
+			font-size: 34px
+			margin-bottom: 40px
 	&__list
 		display: flex
 		flex-wrap: wrap
 		justify-content: center
 	&__row
 		display: flex
+		+r(767)
+			display: block
+			width: 180px
+			margin: auto
 		&:nth-of-type(even)
 			.item
 				flex-direction: row-reverse
+		+r(1220)
+			width: 100%
+			justify-content: space-around
+			&:not(:last-of-type)
+				margin-bottom: 30px
 		.item
 			display: flex
+			+r(1220)
+				display: block
+			+r(767)
+				margin-bottom: 20px
+			&__pick
+				+r(1599)
+					height: 200px
+				+r(991)
+					height: 180px
 			&__info
 				background-color: $greyLight
 				text-align: center
 				width: 250px
+				padding-top: 40px
+				+r(1220)
+					padding-bottom: 15px
+				+r(1599)
+					width: 200px
+				+r(991)
+					width: 180px
 				.name
-					margin-top: 65px
 					font-size: 18px
 					font-family: 'Merriweather-Bold', 'Times New Roman', Times, serif
 					font-weight: 700

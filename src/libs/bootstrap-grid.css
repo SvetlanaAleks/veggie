@@ -29,9 +29,9 @@
     }
 }
 
-@media (min-width: 1900px) {
+@media (min-width: 1600px) {
     .container {
-        width: 1550px;
+        width: 1540px;
     }
 }
 

@@ -1,17 +1,35 @@
 .menu
 	padding-top: 70px
 	padding-bottom: 80px
+	+r(767)
+		padding-top: 50px
+		padding-bottom: 50px
 	&__title
 		margin-bottom: 60px
+		+r(767)
+			font-size: 35px
+			margin-bottom: 40px
 	&__tabs
 		display: flex
 		justify-content: center
 		margin-bottom: 85px
+		+r(767)
+			margin-bottom: 50px
+		+r(575)
+			display: block
 		.list
 			border: 1px solid transparent
 			margin-right: 22px
 			font-size: 18px
 			transition: .4s linear
+			+r(767)
+				display: flex
+				align-items: center
+				text-align: center
+			+r(575)
+				margin-right: 0
+				&:not(:last-of-type)
+					margin-bottom: 10px
 			&--active
 				border: 1px solid $mainColor
 			&:last-of-type
@@ -23,20 +41,35 @@
 				color: $mainColor
 				padding: 17px 23px
 				display: block
+				+r(575)
+					margin: auto
 	&__list
 		display: none
 		justify-content: space-between
 		position: relative
 		&--active
 			display: flex
+			+r(991)
+				display: block
 		.col
 			width: 635px
+			+r(1599)
+				width: 500px
+			+r(1199)
+				width: 420px
+			+r(991)
+				width: 100%
+				margin: auto
+			+r(575)
+				width: 100%
 	&__item
 		border-bottom: 1px dotted currentColor
 		display: flex
 		justify-content: space-between
 		color: $mainColor
 		margin-bottom: 40px
+		+r(575)
+			border-bottom: none
 		.name
 			position: relative
 			background: white
@@ -44,6 +77,8 @@
 			margin-bottom: -10px
 			font-size: 18px
 			font-family: 'Merriweather-Light', 'Times New Roman', Times, serif
+			+r(1199)
+				font-size: 16px
 			&__components
 				position: absolute
 				left: 0

@@ -3,20 +3,42 @@
 	background: url(../img/contact_back.jpg) no-repeat center top
 	padding-bottom: 30px
 	background-size: cover
+	+r(1199)
+		background-position: calc(50% - 200px)
+	+r(575)
+		background-position: calc(50% - 245px)
 	.content
 		width: 575px
 		margin-right: 0
 		margin-left: auto
 		color: $mainColor
+		+r(1599)
+			width: 35%
+		+r(1199)
+			width: 55%
+		+r(767)
+			width: 60%
+		+r(575)
+			width: 100%
 	&__title
 		margin-bottom: 65px
 	&__col
 		max-width: 220px
+		+r(1599)
+			text-align: center
+			margin-bottom: 30px
+			&:last-of-type
+				margin-bottom: 50px
 	&__cols
 		margin-bottom: 100px
+		+r(1599)
+			width: 200px
+			margin: auto
 	.cols
 		display: flex
 		justify-content: space-between
+		+r(1599)
+			display: block
 	.col
 		line-height: 24px
 		&__title
@@ -38,6 +60,10 @@
 		width: 100%
 		text-align: center
 		margin-bottom: 195px
+		+r(1599)
+			margin-bottom: 120px
+		+r(575)
+			margin-bottom: 80px
 		&__input
 			border: none
 			border-bottom: 1px solid $mainColor
@@ -48,17 +74,23 @@
 			outline: none
 			font-style: italic
 			font-size: 18px
+			+r(1599)
+				width: 100%
+				box-sizing: border-box
 			&--message
 				margin-top: 65px
-				box-sizing: border-box
 				min-width: 100%
 				max-width: 100%
 				min-height: 27px
 				max-height: 200px
 				margin-bottom: 50px
+				box-sizing: border-box
 			&--name
 				width: 235px
 				margin-right: 60px
+				+r(1599)
+					margin-right: 0
+					margin-bottom: 20px
 			&--email
 				width: 235px
 				margin-right: 0
@@ -72,6 +104,7 @@
 			font-family: 'Merriweather', 'Times New Roman', Times, serif
 			color: $mainColor
 			outline: none
+			cursor: pointer
 	.social
 		text-align: right
 		font-size: 0
