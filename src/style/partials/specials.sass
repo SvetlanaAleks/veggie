@@ -21,6 +21,9 @@
 			display: block
 			width: 180px
 			margin: auto
+		+r(575)
+			width: 100%
+			max-width: 290px
 		&:nth-of-type(even)
 			.item
 				flex-direction: row-reverse
@@ -40,6 +43,9 @@
 					height: 200px
 				+r(991)
 					height: 180px
+				+r(575)
+					height: auto
+					width: 100%
 			&__info
 				background-color: $greyLight
 				text-align: center
@@ -50,7 +56,9 @@
 				+r(1599)
 					width: 200px
 				+r(991)
-					width: 180px
+					width: 100%
+				+r(575)
+					padding-top: 15px
 				.name
 					font-size: 18px
 					font-family: 'Merriweather-Bold', 'Times New Roman', Times, serif

@@ -11,7 +11,7 @@
 	+r(575)
 		background-position: right
 		padding-top: 30px
-		min-height: 750px
+		min-height: 450px
 	&__menu
 		display: flex
 		justify-content: flex-end
@@ -23,6 +23,8 @@
 		+r(767)
 			margin-bottom: 100px
 		+r(575)
+			flex-direction: row
+			flex-wrap: wrap
 			margin-bottom: 70px
 		.item
 			text-decoration: none
@@ -40,6 +42,8 @@
 				margin-right: 0
 				&:last-of-type
 					margin-bottom: 0
+			+r(575)
+				margin-bottom: 0
 			&:last-of-type
 				margin-right: 0
 			&:hover
@@ -54,3 +58,6 @@
 			font-size: 37px
 		+r(767)
 			max-width: 400px
+		+r(575)
+			font-size: 26px
+			max-width: 100%
